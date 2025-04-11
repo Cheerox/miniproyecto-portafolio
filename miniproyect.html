@@ -1,116 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio profesional</title>
-</head>
-<body class=" bg-[#0D1117] text-[#FFFFFF]">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+    </style>
+  </head>
+  <body class="text-[#FFFFFF] bg-[#0D1117] ">
     <!-- ENCABEZADO DE LA PAGINA  -->
-    <header class="border-cyan-800 border-3 flex
-    ">
-        <nav class="">
-            <div>
-                <img class="" src="" alt="">
-            </div>
-            
-            <ul>
-                <a href="">ABOUT ME</a>
-                <a href="">SKILLS</a>
-                <a href="">PROJECTS</a>
-            </ul>
-            
+    <header class="flex h-25 bg-[#0D1117]">
+      <nav class="flex items-center justify-between px-10 py-4 w-full">
+        <div class="flex justify-start flex-1">
+          <img
+            class="w-18 rounded-lg border border-lime-300 shadow-lg shadow-lime-400"
+            src="./blacky.jpg"
+            alt="blacky"
+          />
+        </div>
 
+        <div class="flex justify-center gap-5 flex-1 font-sans font-light">
+          <a class="" href="">ABOUT ME</a>
+          <a class="" href="">SKILLS</a>
+          <a class="" href="">PROJECTS</a>
+        </div>
 
-            <a href="">CONTACT</a>
-        </nav>
+        <div class="flex justify-end flex-1">
+          <a
+            href="#"
+            class="flex items-center gap-2 border text-white font-light px-4 py-2 rounded-full hover:bg-lime-200 hover:text-black"
+          >
+            <span>CONTACT</span>
+            <span class="bg-lime-300 p-2 rounded-full">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6 text-black"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </nav>
     </header>
     <!-- ------------------------ -->
-    
-    <main>
 
+    <main class="flex-auto bg-[#0D1117] w-full">
+      <section class="max-w-full bg-gradient-to-b from-[#0D1117] via-[#0D1117]  to-[#39568d] to-100% ">
+        <div
+          style="font-family: Inter"
+          class="text-center italic text-[2rem] mt-[5%] "
+        >
+          <h1>
+            I'm <span class="text-lime-200">Paolo Cuchachi</span> <br />
+            <span class="border-white-500/50 border-2 rounded-xl p-2 "
+              >Fronted</span
+            >
+            Developer
+          </h1>
+        </div>
+
+        <img
+          src="./quake 2.png"
+          alt=""
+          class="w-1/5 mt-10 mx-auto shadow-2xl shadow-lime-300"
+        />
 
         <!-- SECCION DE FOTO Y LOGO DE INICIO -->
-        <section>
-            <h1>I'm Paolo Cuchachi <span>Fronted</span> Developer</h1>
-            
-            <img src="" alt="">
 
-            <article></article>
-            <article></article>
+        <article
+          class="w-76 h-40 rounded-2xl bg-indigo-950 inset-shadow-sm inset-shadow-indigo-500 
+          relative bottom-40 left-4 -rotate-7"
+        >
+          <h2 class="pl-4 pt-4">
+            <strong>Client Review From<br />Austrilia</strong>
+          </h2>
+          <p class="text-slate-500 pl-4 pt-2 text-wrap">
+            asdasajksdhgaksjdhgakjshgdkajsdalsj
+            asdalskdjhalskjhdasdasdasdasdasdasa
+          </p>
+        </article>
 
-        </section>
-        <!-- ------------- -->
+        <div
+          class="w-76 h-40 rounded-2xl bg-indigo-950 inset-shadow-sm inset-shadow-indigo-500 
+          bottom-[21%] right-0 mr-4 rotate-7 flex absolute"
+        >
+          <h2 class="pl-4 pt-4""><strong>MY EXPERTISE</strong></h2>
+        </div>
 
-        <!-- SECCION DE QUIEN SOY -->
-        <h1>¿Quien soy?</h1>
-        
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        
+        <div class="w-1/12 mx-auto text-black text-center relative bottom-[100px] 
+        bg-lime-200 border-1 rounded-full p-2" style="font-family: Inter">
+          <a href="">MY PROJECTS</a>
+        </div>
+      </section>
+      <!-- ------------- -->
+
+      <!-- SECCION DE QUIEN SOY -->
+      <section class="bg-[#0D1117]">
+        <h1 class="text-center" style="font-family: Inter">WHO AM I?</h1>
+
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+
         <p></p>
         <p></p>
         <p></p>
 
         <a href="">MIRA MIS PROYECTOS</a>
+      </section>
 
-        <!-- FIN DE SECCION DE QUIEN SOY -->
-    
-        <!-- MIS HABILIDADES -->
-        
-        <h1>MY SKILLS</h1>
+      <!-- FIN DE SECCION DE QUIEN SOY -->
 
-        <div>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+      <!-- MIS HABILIDADES -->
 
-            <div></div>
+      <h1>MY SKILLS</h1>
 
-        </div>    
+      <div>
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
 
-        <div>
-            <h1>ADDITIONAL SKILLS</h1>
-            
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-        
-        </div>
+        <div></div>
+      </div>
 
-        <article>
-            <h1>THE WORKS CLOSEST TO MY HEART</h1>
-            <a href=""></a>
-        </article>
+      <div>
+        <h1>ADDITIONAL SKILLS</h1>
 
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+      </div>
 
-        <!-- FORMULARIO DE CONTACTO -->
-        <form action="" method="get">
-            <h1>Contactame</h1>
-            <input type="text">
-            <input type="email" name="" id="">
-            <textarea name="" id="">
+      <article>
+        <h1>THE WORKS CLOSEST TO MY HEART</h1>
+        <a href=""></a>
+      </article>
+
+      <!-- FORMULARIO DE CONTACTO -->
+      <form action="" method="get">
+        <h1>Contactame</h1>
+        <input type="text" />
+        <input type="email" name="" id="" />
+        <textarea name="" id="">
                 Comentame
-            </textarea>
-            <button>ENVIAR</button>
-        </form>
-
-
-
+            </textarea
+        >
+        <button>ENVIAR</button>
+      </form>
     </main>
-    
-
-</body>
+  </body>
 </html>
