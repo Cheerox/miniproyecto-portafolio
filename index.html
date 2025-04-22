@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en" class="dark">
 
 <head>
   <meta charset="UTF-8" />
@@ -13,6 +13,18 @@
 </head>
 
 <body class="text-[#FFFFFF] bg-[#0D1117] flex flex-col w-full">
+  <!-- DARKMODE-->
+  <button id="dark" class="xl:fixed xl:left-[96%] md:fixed md:left-[680px] md:bottom-7 z-50 fixed left-[280px] bottom-4 flex rounded-md bg-indigo-950 inset-shadow-sm inset-shadow-indigo-500 items-center cursor-pointer">
+    <div class="dark:hidden ">
+      <img class="md:w-17 xl:w-17 w-8" src="./resources/sun.svg" alt="Sol-ico">
+    </div>
+
+    <div class="hidden dark:flex">
+      <img class=" md:w-17 xl:w-17 w-8 rounded-md dark:bg-[#a1d5e7] dark:inset-shadow-sm dark:inset-shadow-[#8dd3ed]" src="./resources/moon.svg" alt="Moon-ico">
+    </div>
+  </button>
+
+
   <!-- ENCABEZADO DE LA PAGINA  -->
   <header
     class="dark:bg-[#50849c] xl:w-full xl:gap-180 xl:items-center md:w-full md:gap-25 md:items-center flex items-center w-full pt-5 pb-10 bg-[#0D1117] justify-around gap-2">
@@ -23,27 +35,17 @@
     </div>
 
     <nav
-      class="dark:text-[#096172] dark:font-medium xl:text-[22px] xl:text-center xl:gap-3 md:text-[20px] md:text-center md:gap-2 text-[11px] flex text-center items-center gap-2 font-sans font-light">
+      class="dark:text-[#096172] dark:font-normal xl:text-[22px] xl:text-center xl:gap-3 md:text-[20px] md:text-center md:gap-2 text-[11px] flex text-center items-center gap-2 font-sans font-light">
       <a class="" href="">ABOUT ME</a>
       <a class="" href="">SKILLS</a>
       <a class="" href="">PROJECTS</a>
     </nav>
 
-    <!-- DARKMODE-->
-    <button id="dark" class="fixed -bottom-0 xl:relative xl:left-[500px]  flex items-center rounded-full cursor-pointer">
-      <div class="dark:hidden ">
-        <img class="xl:w-12 w-6" src="./resources/sun.svg" alt="Sol-ico">
-      </div>
-
-      <div class="hidden dark:flex">
-        <img class="xl:w-12 w-6" src="./resources/moon.svg" alt="Moon-ico">
-      </div>
-    </button>
 
     <div class="flex justify-end">
       <a href="#"
-        class="dark:border-3 dark:text-blue-50 dark:font-normal dark:border-blue-900 xl:w-40 
-          md:w-30 md:h-15
+        class="dark:border-1 dark:text-blue-50 dark:font-normal dark:border-blue-900 xl:w-40 
+          md:w-31 md:h-15 
           flex h-8 items-center gap-1 border text-white font-light px-2 rounded-full hover:bg-lime-200 hover:text-black">
         <span class="xl:text-[22px] 
           md:text-[15px] 
@@ -63,50 +65,47 @@
 
   <!-- SECCION DE LETRAS DE PRESENTACION-->
 
-  <main class="dark:bg-indigo-400 flex-auto bg-[#0a0f22] w-full">
+  <main class="dark:bg-[#50849c] flex-auto bg-[#0a0f22] w-full">
     <section
-      class="xl:h-216 dark:bg-gradient-to-b dark:from-[#50849c] dark:via-[#7ebddaf6] dark:to-[#226a8bf6] dark:to-100% md:h-127 h-53 bg-gradient-to-b from-[#0D1117] via-[#0D1117] to-[#39568d] to-100%">
+      class="xl:h-216 dark:bg-gradient-to-b dark:from-[#50849c] dark:via-[#2f87aff6] dark:to-[#3ba5d6f6] dark:to-100% md:h-127 h-53 bg-gradient-to-b from-[#0D1117] via-[#0D1117] to-[#39568d] to-100%">
       <div style="font-family: Inter" class="xl:text-[55px] 
         md:text-[35px]
         text-center italic">
         <h1>
-          I'm <span class="text-lime-200">Paolo Cuchachi</span> <br />
+          I'm <span class="text-lime-200 dark:text-[#84d3f5]">Paolo Cuchachi</span> <br />
           <span class="border-[#ffffff28] border-1 rounded-md p-[2px]">Fronted</span>
           Developer
         </h1>
       </div>
 
       <!-- SECCION DE FOTO Y LOGO DE INICIO -->
-      <img src="./foto1.png" alt="" class="xl:w-130
-          md:w-75 md:mx-auto 
-          w-30 mx-auto mt-1 drop-shadow-[0_-24px_27px_#DAF7A6]" />
+      <img src="./foto1.png" alt="" class="dark:drop-shadow-[0_-24px_27px_#47bcfb] xl:w-130 md:w-75 md:mx-auto w-30 mx-auto mt-1 drop-shadow-[0_-24px_27px_#DAF7A6]" />
 
       <button
-        class="xl:w-45 xl:h-14 xl:text-[20px] xl:relative xl:bottom-20
+        class="dark:bg-[#abe0ff] dark:text-gray-500 dark:border-[#005c96] xl:w-45 xl:h-14 xl:text-[20px] xl:relative xl:bottom-20
           md:w-35 md:h-9 md:text-[15px] md:items-center md:relative md:bottom-10 
           flex justify-center relative bottom-7 w-[75px] text-[8px] mx-auto text-black font-medium bg-lime-200 border-1 rounded-full p-1"
         style="font-family: Inter" href="">
         MY PROJECTS
       </button>
 
-      <article class="xl:w-105 xl:h-50 xl:text-[20px] xl:pl-5 xl:pt-5 xl:relative xl:bottom-105 xl:left-5
+      <article class="dark:bg-[#3faed5] dark:inset-shadow-sm dark:inset-shadow-[#8dd3ed] xl:w-105 xl:h-50 xl:text-[20px] xl:pl-5 xl:pt-5 xl:relative xl:bottom-105 xl:left-5
           md:w-50 md:h-33 md:text-[12px] md:pl-3 md:pt-3 md:relative md:bottom-[300px]
           flex flex-col relative bottom-[150px] left-1 
           w-22 h-15 text-[5px] text-wrap pl-2 pt-2 
-          rounded-md bg-indigo-950 inset-shadow-sm 
-          inset-shadow-indigo-500 -rotate-7">
+          rounded-md bg-indigo-950 inset-shadow-sm inset-shadow-indigo-500 -rotate-7">
 
         <h2 class="">
           <strong>Client Review From<br />Austrilia</strong>
         </h2>
-        <p class="text-slate-500 text-wrap">
+        <p class=" text-slate-500 text-wrap dark:text-black ">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
           dolor sit amet consectetur adipisicing elit.
         </p>
       </article>
 
       <div class="flex justify-end">
-        <div class="xl:w-105 xl:h-50 xl:text-[20px] xl:pl-5 xl:pt-5 xl:relative xl:bottom-150 xl:right-5
+        <div class="dark:bg-[#3faed5] dark:inset-shadow-sm dark:inset-shadow-[#8dd3ed] xl:w-105 xl:h-50 xl:text-[20px] xl:pl-5 xl:pt-5 xl:relative xl:bottom-150 xl:right-5
             md:w-50 md:h-33 md:text-[12px] md:pl-3 md:pt-3 md:relative md:bottom-[435px]
             flex w-22 h-15 text-[5px] relative bottom-[210px] rounded-md bg-indigo-950 inset-shadow-sm inset-shadow-indigo-500
             rotate-7 pl-2 pt-2">
@@ -118,8 +117,8 @@
 
 
     <!-- SECCION DE QUIEN SOY -->
-    <section class="dark:bg-indigo-400 bg-[#0a0f22] flex flex-col items-center">
-      <h1 class="xl:text-[75px] xl:mt-30
+    <section class="dark:bg-[#50849c]  bg-[#0a0f22] flex flex-col items-center">
+      <h1 class="xl:text-[75px] xl:mt-30 dark:text-[#84d3f5]
           md:text-[65px] md:mt-21
           text-lime-200 text-center text-[34px] mt-[20%]" style="font-family: Inter">
         WHO AM I?
@@ -159,7 +158,7 @@
           <br />
           my isisure time which is kindle fun and relaxing!
         </p>
-        <a style="font-family: Inter" href="#" class="xl:w-90 xl:h-20 xl:text-[30px] xl:py-4 xl:mt-8
+        <a style="font-family: Inter" href="#" class="dark:bg-[#abe0ff] dark:text-gray-500 xl:w-90 xl:h-20 xl:text-[30px] xl:py-4 xl:mt-8
             md:w-45 md:h-10 md:text-[15px] md:py-2 md:mt-6    
             mt-4 mx-auto w-[33%] text-[8px] text-black font-medium bg-lime-200 border-1 rounded-full p-1">
           MIRA MIS PROYECTOS
@@ -170,9 +169,9 @@
     <!-- FIN DE SECCION DE QUIEN SOY -->
 
     <!-- MIS HABILIDADES -->
-    <section class="bg-[#0a0f22]">
+    <section class="bg-[#0a0f22] dark:bg-[#50849c]">
       <h1 style="font-family: Inter" class="xl:text-[75px] xl:mt-40
-        md:text-[65px] md:mt-54
+        md:text-[65px] md:mt-54 dark:text-[#84d3f5]
         text-lime-200 text-center text-[34px] mt-[18%]">
         MY SKILLS
       </h1>
@@ -183,44 +182,44 @@
         <div class="xl:grid-cols-4 xl:w-full xl:max-w-4xl
           md:grid-cols-5
           grid grid-cols-2 gap-2 ">
-          <div class="xl:h-70
+          <div class="xl:h-70 dark:bg-[#3faed5] dark:inset-shadow-sm dark:inset-shadow-[#8dd3ed]
             flex items-center justify-center bg-[#1d2236] inset-shadow-sm inset-shadow-[#6270c9] p-6 rounded-lg h-40">
             <img src="./resources/html5.svg" class="md:w-20 md:h-20
               w-12 h-12" alt="HTML" />
           </div>
 
-          <div class="xl:h-70
+          <div class="xl:h-70 dark:bg-[#3faed5] dark:inset-shadow-sm dark:inset-shadow-[#8dd3ed]
             flex items-center justify-center bg-[#1d2236] inset-shadow-sm inset-shadow-[#6270c9] p-6 rounded-lg h-40">
             <img src="./resources/css3.svg" class="md:w-20 md:h-20
               w-12 h-12" alt="CSS" />
           </div>
-          <div class="xl:h-70
+          <div class="xl:h-70 dark:bg-[#3faed5] dark:inset-shadow-sm dark:inset-shadow-[#8dd3ed]
             flex items-center justify-center bg-[#1d2236] inset-shadow-sm inset-shadow-[#6270c9] p-6 rounded-lg h-40">
             <img src="./resources/js.svg" class="md:w-20 md:h-20
                 w-12 h-12" alt="JavaScript" />
           </div>
-          <div class="xl:h-70
+          <div class="xl:h-70 dark:bg-[#3faed5] dark:inset-shadow-sm dark:inset-shadow-[#8dd3ed]
             flex items-center justify-center bg-[#1d2236] inset-shadow-sm inset-shadow-[#6270c9] p-6 rounded-lg h-40">
             <img src="./resources/react.svg" class="md:w-20 md:h-20
               w-12 h-12" alt="React" />
           </div>
 
-          <div class="xl:h-70
+          <div class="xl:h-70 dark:bg-[#3faed5] dark:inset-shadow-sm dark:inset-shadow-[#8dd3ed]
             flex items-center justify-center bg-[#1d2236] inset-shadow-sm inset-shadow-[#6270c9] p-6 rounded-lg h-40">
             <img src="./resources/nextjs.svg" class="md:w-20 md:h-20
                 w-12 h-12" alt="Next.js" />
           </div>
-          <div class="xl:h-70
+          <div class="xl:h-70 dark:bg-[#3faed5] dark:inset-shadow-sm dark:inset-shadow-[#8dd3ed]
             flex items-center justify-center bg-[#1d2236] inset-shadow-sm inset-shadow-[#6270c9] p-6 rounded-lg h-40">
             <img src="./resources/nodejs.svg" class="md:w-20 md:h-20
                 w-12 h-12" alt="Node.js" />
           </div>
-          <div class="xl:h-70
+          <div class="xl:h-70 dark:bg-[#3faed5] dark:inset-shadow-sm dark:inset-shadow-[#8dd3ed]
             flex items-center justify-center bg-[#1d2236] inset-shadow-sm inset-shadow-[#6270c9] p-6 rounded-lg h-40">
             <img src="./resources/tailwind.svg" class="md:w-20 md:h-20
               w-12 h-12" alt="Tailwind" />
           </div>
-          <div class="xl:h-70
+          <div class="xl:h-70 dark:bg-[#3faed5] dark:inset-shadow-sm dark:inset-shadow-[#8dd3ed]
             flex items-center justify-center bg-[#1d2236] inset-shadow-sm inset-shadow-[#6270c9] p-6 rounded-lg h-40">
             <img src="./resources/mongodb.svg" class="md:w-20 md:h-20
                 w-12 h-12" alt="MongoDB" />
@@ -228,10 +227,10 @@
 
 
           <div style="font-family: Inter" class="xl:col-span-4 xl:flex xl:justify-end xl:relative 
-            xl:-top-145 xl:left-114
+            xl:-top-145 xl:left-114 
             col-span-2 flex justify-center ">
             <div class="xl:items-center xl:justify-center xl:text-center xl:w-1/2 xl:h-143
-              md:h-40 md:text-[10px] md:p-15
+              md:h-40 md:text-[10px] md:p-15 dark:bg-[#3faed5] dark:inset-shadow-sm dark:inset-shadow-[#8dd3ed]
               bg-[#151d32] rounded-lg p-8 text-center">
 
               <h2 class="xl:text-[120px] xl:mb-4 xl:mt-5
@@ -243,7 +242,7 @@
                 Years<br>Experience<br>Working
               </p>
               <a href="#" class="xl:w-70 xl:h-13 xl:text-[20px] xl:py-3 xl:mt-8
-                  md:-mt-3
+                  md:-mt-3 dark:bg-[#abe0ff] dark:text-gray-500
                   inline-block bg-lime-200 text-black px-6 py-2 rounded-full font-bold">
                 DOWNLOAD MY CV
               </a>
@@ -256,12 +255,12 @@
       <!--ADDITIONAL SKILLS-->
 
       <div style="font-family: Inter" class=" xl:-mt-135 xl:w-340 xl:h-50 xl:mx-auto xl:relative xl:right-8
-      md:w-170 md:h-40 md:flex-wrap 
+      md:w-170 md:h-40 md:flex-wrap dark:bg-[#3faed5] dark:inset-shadow-sm dark:inset-shadow-[#8dd3ed]
       mt-15 mx-auto h-[554px] w-[255px] bg-[#1d2236] inset-shadow-sm inset-shadow-[#6270c9] p-6 rounded-lg ">
         <div class="">
           <h1 style="font-family: Inter" class="xl:text-[35px] xl:pl-10
           md:text-center md:items-center md:justify-center
-          
+          dark:text-[#84d3f5] 
           flex text-center text-nowrap text-[23px] text-lime-200
           font-semibold">ADDITIONAL SKILLS</h1>
 
@@ -286,7 +285,7 @@
 
 
     <div style="font-family: Inter" class="
-        text-white -mt-20 min-h-screen flex items-center justify-center px-6 py-20">
+        text-white -mt-10 min-h-screen flex items-center justify-center px-6 py-20">
       <div class="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-10">
         <div class="flex flex-col items-start gap-6">
           <h2 class="xl:text-[65px] xl:relative xl:left-45 xl:top-10
@@ -297,7 +296,7 @@
             MY HEART
           </h2>
           <a href="#" class="xl:relative xl:z-20 xl:left-76 xl:top-10 xl:w-80 
-              xl:h-14 xl:text-center xl:pt-4
+              xl:h-14 xl:text-center xl:pt-4 dark:bg-[#abe0ff] dark:text-gray-500
               bg-lime-200 text-black font-semibold px-6 py-2 rounded-full hover:bg-lime-300 transition">
             SHOW MY PROJECTS
           </a>
@@ -333,20 +332,19 @@
 
 
     <!-- FORMULARIO DE CONTACTO -->
-    <form style="font-family: Inter" action="" method="get" class="md:w-150 md:h-120 
-      bg-white rounded-xl h-85 w-[90%] flex flex-col -mt-28 mb-5 mx-auto gap-2 ">
-      <h1 class="md:text-[50px]
+    <form style="font-family: Inter" action="" method="get" class="xl:w-200 xl:h-150 xl:-mt-40 xl:mb-10 md:w-150 md:h-120 bg-white rounded-xl h-85 w-[90%] flex flex-col -mt-10  mb-5 mx-auto gap-2 ">
+      <h1 class="md:text-[50px] xl:text-[70px] xl:mb-1
         text-[#12131f] mt-6 mb-6 text-center text-[29px] font-semibold">CONTACTAME</h1>
-      <input class="md:w-130 md:h-15 md:text-[15px]
+      <input class="md:w-130 md:h-15 md:text-[15px] xl:w-150 xl:h-20 xl:text-[18px]
         bg-[#e3e3e3] rounded-md text-[10px] text-[#808080] font-bold pl-5 h-10 w-65 mx-auto" type="text"
         placeholder="TU NOMBRE" />
-      <input class="md:w-130 md:h-15 md:text-[15px]
+      <input class="md:w-130 md:h-15 md:text-[15px] xl:w-150 xl:h-20 xl:text-[18px]
         bg-[#e3e3e3] rounded-md text-[10px] text-[#808080] font-bold pl-5 h-10 w-65 mx-auto" type="email"
         placeholder="CORREO ELECTRONICO" name="" id="" />
-      <textarea class="md:w-130 md:h-40 md:text-[15px]
+      <textarea class="md:w-130 md:h-40 md:text-[15px] xl:w-150 xl:h-50 xl:text-[18px]
         bg-[#e3e3e3] rounded-md text-[10px] text-[#808080] font-bold pl-5 pt-3 h-20 w-65 mx-auto"
         placeholder="Escribe aqui" name="" id=""></textarea>
-      <button class="md:w-130 md:h-15 md:text-[15px] md:mb-6
+      <button class="md:w-130 md:h-15 md:text-[15px] md:mb-6 xl:w-150 dark:bg-[#abe0ff] dark:text-gray-500
         bg-lime-300 text-black text-[10px] font-bold rounded-xl mt-3 mx-auto w-65 h-6">ENVIAR</button>
     </form>
   </main>
